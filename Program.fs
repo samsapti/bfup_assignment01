@@ -6,8 +6,9 @@
     February 4th, 2022
 *)
 
-
-(* GREEN *)
+(*
+    GREEN
+*)
 
 // Exercise 1.1
 let sqr x = x * 2
@@ -36,7 +37,22 @@ let rec dupn (s: string) = function
 
 // Exercise 1.7
 let rec bin (n, k) =
-    if k = 0 || k = n then
-        1
-    else
-        bin (n - 1, k - 1) + bin (n - 1, k)
+    if k = 0 || k = n then 1
+    else bin (n - 1, k - 1) + bin (n - 1, k)
+
+(*
+    YELLOW
+*)
+
+// Exercise 1.8
+let timediff (h1, m1) (h2, m2) = (m2 - m1) + 60 * (h2 - h1)
+
+// Exercise 1.9
+let minutes = timediff (0, 0)
+
+// Exercise 1.10
+let curry f x y = f (x, y)
+let uncurry f (x, y) = f x y
+
+// Exercise 1.11
+let empty (pair : char * int) = fun (pos : int) -> pair
