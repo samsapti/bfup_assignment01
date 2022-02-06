@@ -18,8 +18,8 @@ let sqr x = x * x
 let pow x n = x ** n
 
 // Exercise 1.3
-let rec sum = fun n ->
-    match n with
+let rec sum =
+    function
     | 0 -> 0
     | n -> n + sum (n - 1)
 
@@ -41,7 +41,7 @@ let rec dupn : string -> int -> string = fun s n ->
     | n -> s + dupn s (n - 1)
 
 // Exercise 1.7
-let rec bin = fun (n, k) ->
+let rec bin (n, k) =
     if k = 0 || k = n then
         1
     elif n = 0 || k = 0 || n <= k then
