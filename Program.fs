@@ -1,5 +1,7 @@
 ﻿// vim: ft=fsharp
 
+module Programfs
+
 (*
     Functional Programming - Assignment 1
     Sam Al-Sapti (sals@itu.dk)
