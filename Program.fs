@@ -1,13 +1,11 @@
-﻿// vim: ft=fsharp
-
-module Programfs
-
-(*
+﻿(*
     Functional Programming - Assignment 1
     Sam Al-Sapti (sals@itu.dk)
     February 7th, 2022
 *)
 
+
+module Programfs
 
 (*
     GREEN
